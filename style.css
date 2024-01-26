@@ -117,15 +117,16 @@ button:hover {
 footer {
   background-color: #113448;
   color: white;
-   padding: 100px;
+ 
   
 }
 .footer-col {
  
     display: flex;
     column-gap: 3em;
-    padding:2.5em 5em;
-    position: relative;
+    padding:5em 0;
+    margin: 0 auto;
+    width: 80%;
   }
 footer a {
   color: white;
@@ -152,6 +153,78 @@ footer p {
   
 }
 
+/* FORM */
+#formSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em 0;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 2em;
+}
+.formData{
+    padding: 1em 0;
+}
+.formData p{
+    padding: 1rem 0;
+}
+.formData :first-child{
+    color: #14bf98;
+}
+.contact {
+    display: flex;
+    gap: 1em;
+
+    a {
+        color: #14bf98;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+    }
+  
+    span:nth-child(odd) {
+        font-size: 1.5rem;
+      
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  form * {
+    margin: .5em 0;
+    padding: .5em 0;
+  }
+  input,textarea{
+      outline: none;
+      border: 1px solid #dadada;
+      border-radius: 4px;
+      &:hover{
+        border:1px solid black;
+      }
+  }
+  
+  button[type="submit"] {
+    background-color: #14bf98;
+    color: #f2f2f2;
+    border-radius: 4px;
+    padding: calc(1em - 3px)0;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.104);
+      color: #14bf98;
+      padding: calc(1em - 4px)0;
+    }
+  }
+  button[type="submit"]:active{
+    padding: 0;
+    margin: 0;
+  }
+/* FORM */
+
 @media only screen and(max-width:768px) {
   .navList {
     flex-direction: column;
@@ -172,4 +245,9 @@ footer p {
   footer div {
     padding: 1em;
   }
+  #formSection{
+   
+    grid-template-columns:1fr;
+   
+}
 }
