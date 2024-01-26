@@ -113,30 +113,43 @@ button:hover {
   padding: calc(1em - 1px) 3em;
 }
 
-.footer-col {
-  padding: 5rem;
-  display: flex;
-  column-gap: 3em;
-}
+
 footer {
   background-color: #113448;
   color: white;
+   padding: 100px;
+  
 }
+.footer-col {
+ 
+    display: flex;
+    column-gap: 3em;
+    padding:2.5em 5em;
+    position: relative;
+  }
 footer a {
   color: white;
   display: block;
   cursor: pointer;
+  padding: 0.2em;
 }
 footer div :nth-child(1) {
-  max-width: 60%;
-  text-align: start;
+  max-width: 50%;
+
 }
 .copyright {
   text-align: center;
 }
 
-footer h4{
-font-size: 2rem;
+footer h4 {
+  font-size: 1.5rem ;
+  margin-bottom: 1em;
+  width: 100%;
+  display: block;
+}
+footer p {
+    font-size: 1rem;
+  
 }
 
 @media only screen and(max-width:768px) {
@@ -147,14 +160,16 @@ font-size: 2rem;
     display: block;
   }
 }
-@media only screen and (max-width:990px) {
+@media only screen and (max-width: 990px) {
   .footer-col {
     display: flex;
     flex-direction: column;
-    
+  }
+  footer div :nth-child(1) {
+    max-width: 100%;
   }
 
-  footer div{
+  footer div {
     padding: 1em;
   }
 }
