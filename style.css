@@ -4,19 +4,17 @@
   box-sizing: border-box;
 }
 #heroSection {
-   background: url("header-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 2em 4em;
-    color: white;
-    
-
-   
+  background: url("header-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2em 4em;
+  color: white;
+  text-align: center;
 }
-nav{
-    top:20%;
-    position: relative;
+nav {
+  top: 20%;
+  position: relative;
 }
 .flex {
   display: flex;
@@ -32,32 +30,31 @@ nav img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  animation: toggle 0.5s    step-end;
+  animation: toggle 0.5s step-end;
 }
 ul li {
   text-decoration: none;
   list-style: none;
 }
-.burgur div{
-    height: 7px;
-    background-color: white;
-    width: 4em;
-    border-radius: 7px;
-
+.burgur div {
+  height: 7px;
+  background-color: white;
+  width: 4em;
+  border-radius: 7px;
 }
 @keyframes toggle {
-    form{
-        scale: 1;
-        transform: translate(0);
+  form {
+    scale: 1;
+    transform: translate(0);
+  }
+  to {
+    form {
+      scale: 1;
+      transform: translate(45deg);
     }
-    to{
-        form{
-            scale: 1;
-            transform: translate(45deg);
-        }
-    }
+  }
 }
-.gap{
+.gap {
   gap: 2em;
 }
 .flexCenter {
@@ -66,63 +63,98 @@ ul li {
   align-items: center;
   flex-direction: column;
 }
-.hero{
-    min-height: 90vh;
+.hero {
+  min-height: 90vh;
 }
 
-.hexa{ 
-    padding: .5em;
-    background: url(https://www.free-css.com/assets/files/free-css-templates/preview/page259/aria/assets/images/hexagon-green.svg) center center no-repeat;
-    &:hover{
-        background: aqua;
-    }
+.hexa {
+  padding: 0.5em;
+  background: url(https://www.free-css.com/assets/files/free-css-templates/preview/page259/aria/assets/images/hexagon-green.svg)
+    center center no-repeat;
+  &:hover {
+    background: aqua;
+  }
 }
-.hexa>i{
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    
-   
+.hexa > i {
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
-.hexaImg{
-margin-left: 1em;
-gap: 10px;
+.hexaImg {
+  margin-left: 1em;
+  gap: 10px;
 }
 
+h1 {
+  font-size: 4rem;
+  padding-bottom: 0.5em;
+}
+h2 {
+  font-size: 2rem;
+}
+.hero p {
+  font-size: 1.5rem;
+  width: 60%;
+  font-weight: 200;
+}
+button {
+  margin: 1.5em auto;
+  padding: 1em 3em;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #14bf98;
+  color: white;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.104);
+  color: #14bf98;
+  border: 2px solid #14bf98;
+  padding: calc(1em - 1px) 3em;
+}
+
+.footer-col {
+  padding: 5rem;
+  display: flex;
+  column-gap: 3em;
+}
+footer {
+  background-color: #113448;
+  color: white;
+}
+footer a {
+  color: white;
+  display: block;
+  cursor: pointer;
+}
+footer div :nth-child(1) {
+  max-width: 60%;
+  text-align: start;
+}
+.copyright {
+  text-align: center;
+}
+
+footer h4{
+font-size: 2rem;
+}
 
 @media only screen and(max-width:768px) {
-    .navList{
-        flex-direction: column;
-    }
-    .burgur{
-        display: block;
-    }
+  .navList {
+    flex-direction: column;
+  }
+  .burgur {
+    display: block;
+  }
 }
-h1 {
-    font-size: 4rem;
-    padding-bottom:.5em ;
+@media only screen and (max-width:990px) {
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    
   }
-  h2 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1.5rem;
-    width: 60%;
-    font-weight: 200;
-  }
-  button {
-    margin: 1.5em auto;
-    padding: 1em 3em;
-    border-style: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    background-color:#14bf98;
-    color: white;
-  }
-  button:hover {
-    background-color: rgba(255, 255, 255, 0.104);
-    color: #14bf98;
-    border: 2px solid #14bf98;
-    padding: calc(1em - 1px) 3em;
 
+  footer div{
+    padding: 1em;
   }
+}
