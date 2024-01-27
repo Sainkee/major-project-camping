@@ -36,12 +36,57 @@ ul li {
   text-decoration: none;
   list-style: none;
 }
-.burgur div {
-  height: 7px;
-  background-color: white;
-  width: 4em;
-  border-radius: 7px;
-}
+.container {
+    position: relative;
+    padding: 1.5rem;
+  }
+  
+  .menu-toggle {
+    position: absolute;
+    right: 1.5rem;
+    top: 49%;
+    transform: translate(0, -50%);
+    height: 26px;
+    width: 29px;
+  
+    &, &:hover {
+      color: #000;
+    }
+  }
+  
+  .menu-toggle-bar {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: rgb(250, 247, 247);
+    transition: all 0.3s ease;
+  
+    &.menu-toggle-bar--top {
+      transform: translate(0, -8px);
+    }
+    &.menu-toggle-bar--middle {
+    }
+    &.menu-toggle-bar--bottom {
+      transform: translate(0, 8px);
+    }
+  
+    .nav-open & {
+      &.menu-toggle-bar--top {
+        transform: translate(0, 0) rotate(45deg);
+      }
+      &.menu-toggle-bar--middle {
+        opacity: 0;
+      }
+      &.menu-toggle-bar--bottom {
+        transform: translate(0, 0) rotate(-45deg);
+      }
+    }
+  }
 @keyframes toggle {
   form {
     scale: 1;
@@ -113,21 +158,17 @@ button:hover {
   padding: calc(1em - 1px) 3em;
 }
 
-
 footer {
   background-color: #113448;
   color: white;
- 
-  
 }
 .footer-col {
- 
-    display: flex;
-    column-gap: 3em;
-    padding:5em 0;
-    margin: 0 auto;
-    width: 80%;
-  }
+  display: flex;
+  column-gap: 3em;
+  padding: 5em 0;
+  margin: 0 auto;
+  width: 80%;
+}
 footer a {
   color: white;
   display: block;
@@ -136,93 +177,91 @@ footer a {
 }
 footer div :nth-child(1) {
   max-width: 50%;
-
 }
 .copyright {
   text-align: center;
 }
 
 footer h4 {
-  font-size: 1.5rem ;
+  font-size: 1.5rem;
   margin-bottom: 1em;
   width: 100%;
   display: block;
 }
 footer p {
-    font-size: 1rem;
-  
+  font-size: 1rem;
 }
 
 /* FORM */
-#formSection{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em 0;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-    gap: 2em;
+#formSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em 0;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2em;
 }
-.formData{
-    padding: 1em 0;
+.formData {
+  padding: 1em 0;
 }
-.formData p{
-    padding: 1rem 0;
+.formData p {
+  padding: 1rem 0;
 }
-.formData :first-child{
-    color: #14bf98;
+.formData :first-child {
+  color: #14bf98;
 }
 .contact {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 
-    a {
-        color: #14bf98;
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
-    }
-  
-    span:nth-child(odd) {
-        font-size: 1.5rem;
-      
-    }
+  a {
+    color: #14bf98;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  span:nth-child(odd) {
+    font-size: 1.5rem;
+  }
 }
 form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form * {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+}
+input,
+textarea {
+  outline: none;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  &:hover {
+    border: 1px solid black;
   }
-  form * {
-    margin: .5em 0;
-    padding: .5em 0;
+}
+
+button[type="submit"] {
+  background-color: #14bf98;
+  color: #f2f2f2;
+  border-radius: 4px;
+  padding: calc(1em - 3px) 0;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.104);
+    color: #14bf98;
+    padding: calc(1em - 4px) 0;
   }
-  input,textarea{
-      outline: none;
-      border: 1px solid #dadada;
-      border-radius: 4px;
-      &:hover{
-        border:1px solid black;
-      }
-  }
-  
-  button[type="submit"] {
-    background-color: #14bf98;
-    color: #f2f2f2;
-    border-radius: 4px;
-    padding: calc(1em - 3px)0;
-    
-    &:hover {
-      cursor: pointer;
-      background-color: rgba(255, 255, 255, 0.104);
-      color: #14bf98;
-      padding: calc(1em - 4px)0;
-    }
-  }
-  button[type="submit"]:active{
-    padding: 0;
-    margin: 0;
-  }
+}
+button[type="submit"]:active {
+  padding: 0;
+  margin: 0;
+}
 /* FORM */
 
 @media only screen and(max-width:768px) {
@@ -245,9 +284,7 @@ form {
   footer div {
     padding: 1em;
   }
-  #formSection{
-   
-    grid-template-columns:1fr;
-   
-}
+  #formSection {
+    grid-template-columns: 1fr;
+  }
 }
