@@ -10,53 +10,50 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
-  />
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,100&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- ---------------------hero section--------------------- -->
     <header id="heroSection">
       <nav class="navBar flex">
         <img
           src="https://www.free-css.com/assets/files/free-css-templates/preview/page259/aria/assets/images/logo.svg"
           alt="NavLogo"
         />
-        <div class="flex">
-          <ul class="flex gap navList">
-            <li class="link1">HOME</li>
-            <li class="link2">INTRO</li>
-            <li class="link3">SERVICES</li>
-            <li class="link4">CALL ME</li>
-            <li class="link5">PROJECTS</li>
-            <li class="link6">ABOUT</li>
-            <li class="link7">CONTACT</li>
-          </ul>
-          <span class="hexaImg flex">
-            <span class="hexa">
-              <a href=""
-                ><i class="bi bi-facebook" style="color: white" ;></i
-              ></a>
+        <ul class="flex gap">
+          <li class="link1">HOME</li>
+          <li class="link2">INTRO</li>
+          <li class="link3">SERVICES</li>
+          <li class="link4">CALL ME</li>
+          <li class="link5">PROJECTS</li>
+          <li class="link6">ABOUT</li>
+          <li class="link7">CONTACT</li>
+
+          <li class="hexa">
+            <span>
+              <a href=""><i class="bi bi-facebook" style="color: white"></i></a>
             </span>
             <span class="hexa">
-              <a href=""
-                ><i class="bi bi-twitter" style="color: white" ;></i
-              ></a>
+              <a href=""><i class="bi bi-twitter" style="color: white"></i></a>
             </span>
-          </span>
+          </li>
+        </ul>
+
+        <div class="hamBurger">
+          <a id="menu-toggle" class="menu-toggle">
+            <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+            <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+            <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+          </a>
         </div>
-        <div class="container">
-            <a id="menu-toggle" class="menu-toggle">
-              <span class="menu-toggle-bar menu-toggle-bar--top"></span>
-              <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
-              <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
-            </a>
-          </div>
       </nav>
-      <div class="hero flexCenter">
+      <div class="hero flexCol">
         <h1>BUSSINESS SERVICES</h1>
         <p>
           Aria is a top consultancy company specializing in business growth
@@ -65,9 +62,149 @@
         <button>DISCOVER</button>
       </div>
     </header>
+
+    <!-- intro section -->
+
+    <section id="intro">
+      <div class="intro1">
+        <div>
+          <p class="mark">INTRO</p>
+          <h2>We Offer Some Of The Best Business Growth Services In Town</h2>
+          <p>
+            Launching a new company or developing the market position of an
+            existing one can be quite an overwhelming processs at times.
+          </p>
+          <blockquote class="blockqoute">
+            <em
+              >"Our mission here at Aira is to get you through those tough
+              moments relying on our team's expertise in starting and growing
+              companies."</em
+            >
+          </blockquote>
+          <p><b>Louise Donovan - CEO</b></p>
+        </div>
+        <div class="scale-img">
+          <img src="intro-office.jpg" alt="" />
+        </div>
+      </div>
+      <div class="introIcon">
+        <div class="child1">
+          <span class="intro hexa">
+            <a href=""
+              ><i class="bi bi-binoculars-fill" style="color: white"></i
+            ></a>
+          </span>
+          <h4>Environment Analysis</h4>
+          <p>
+            The starting point of any success story is knowing your current
+            position in the business environment
+          </p>
+        </div>
+        <div class="child2">
+          <span class="intro hexa">
+            <a href=""
+              ><i class="bi bi-binoculars-fill" style="color: white"></i
+            ></a>
+          </span>
+          <h4>Development Planning</h4>
+          <p>
+            After completing the environmental analysis the next stage is to
+            design and plan your development strategy
+          </p>
+        </div>
+        <div class="child3">
+          <span class="intro hexa">
+            <a href=""
+              ><i class="bi bi-binoculars-fill" style="color: white"></i
+            ></a>
+          </span>
+          <h4>Execution & Evaluation</h4>
+          <p>
+            In this phase you will focus on executing the actions plan and
+            evaluating the results after each marketing campaign
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about">
+      <div class="scale-img">
+        <img src="about.jpg" alt="" />
+      </div>
+      <div>
+        <p class="mark">ABOUT</p>
+        <h2>We're Passionate About Delivering Growth Services</h2>
+        <p>
+          Our goal is to provide the right business growth services at the
+          appropriate time so companies can benefit from the created momentum
+          and thrive for a long period of time
+        </p>
+        <ul>
+          <li>Everything we recommend has direct positive impact</li>
+          <li>You will become an important partner of our company</li>
+        </ul>
+      </div>
+    </section>
+    <!-- service -->
+    <section id="serviceSection">
+      <div class="data">
+        <div class="title">
+          <p class="mark">SERVICES</p>
+          <h2>
+            Choose The Service Package <br />
+            That Suits Your Needs
+          </h2>
+        </div>
+        <div class="cardContainer ">
+          <div class="card1 cardflex">
+            <div><img src="services-1.jpg" alt="cuptea"></div>
+            <div>
+              <h4>Off The Ground Off The Ground</h4>
+              <p>Perfect for fresh ideas or young startups, this package will help get the business off the ground</p>
+              <ul>
+                <li>Everything we recommend has direct positive impact</li>
+                <li>You will become an important partner of our company</li>
+              </ul>
+              <h5>Starting at <span> $199</span>  </h5>
+              <button>DISCOVER</button>
+            </div>
+          </div>
+          <div class="card2">
+            <div><img src="services-1.jpg" alt="cuptea"></div>
+            <div>
+              <h4>Off The Ground Off The Ground</h4>
+              <p>Perfect for fresh ideas or young startups, this package will help get the business off the ground</p>
+              <ul>
+                <li>Everything we recommend has direct positive impact</li>
+                <li>You will become an important partner of our company</li>
+              </ul>
+              <h5>Starting at <span> $199</span>  </h5>
+              <button>DISCOVER</button>
+            </div>
+          </div>
+          <div class="card3">
+            <div><img src="services-1.jpg" alt="cuptea"></div>
+            <div>
+              <h4>Off The Ground Off The Ground</h4>
+              <p>Perfect for fresh ideas or young startups, this package will help get the business off the ground</p>
+              <ul>
+                <li>Everything we recommend has direct positive impact</li>
+                <li>You will become an important partner of our company</li>
+              </ul>
+              <h5>Starting at <span> $199</span>  </h5>
+              <button>DISCOVER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------form section--------------------- -->
+
     <section id="formSection" class="">
       <div class="formData">
-        <p>CONTACT</p>
+        <p class="mark">CONTACT</p>
         <h2>Get In Touch Using The Form</h2>
         <p>
           You can stop by our office for a cup of coffee and just use the
@@ -92,8 +229,22 @@
           >
         </p>
         <h4>Follow Aria On Social Media</h4>
-        <div>
-
+        <div class="iconLink">
+          <span class="hexa">
+            <a href=""><i class="bi bi-twitter" style="color: white"></i></a>
+          </span>
+          <span class="hexa">
+            <a href=""><i class="bi bi-facebook" style="color: white"></i></a>
+          </span>
+          <span class="hexa">
+            <a href=""><i class="bi bi-instagram" style="color: white"></i></a>
+          </span>
+          <span class="hexa">
+            <a href=""><i class="bi bi-linkedin" style="color: white"></i></a>
+          </span>
+          <span class="hexa">
+            <a href=""><i class="bi bi-youtube" style="color: white"></i></a>
+          </span>
         </div>
       </div>
 
@@ -110,9 +261,11 @@
           <input type="checkbox" name="" id="check" /> I agree with Aria's
           stated Privacy Policy and Terms Conditions
         </p>
-        <button type="submit">Send Message</button>
+        <button type="submit">SUBMIT MESSAGE</button>
       </form>
     </section>
+    <!-- ---------------------footer section--------------------- -->
+
     <footer>
       <div class="footer-col">
         <div class="foot1">
@@ -147,9 +300,10 @@
     </footer>
   </body>
   <script>
-   document.getElementById('menu-toggle')
-.addEventListener('click', function(){
-  document.body.classList.toggle('nav-open');
-});
+    document
+      .getElementById("menu-toggle")
+      .addEventListener("click", function () {
+        document.body.classList.toggle("nav-open");
+      });
   </script>
 </html>
