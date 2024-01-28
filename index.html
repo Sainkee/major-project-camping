@@ -29,10 +29,10 @@
     <!-- ---------------------hero section--------------------- -->
     <header id="heroSection">
       <nav class="navBar flex">
-        <img
+        <a href="#heroSection"><img
           src="https://www.free-css.com/assets/files/free-css-templates/preview/page259/aria/assets/images/logo.svg"
           alt="NavLogo"
-        />
+        /></a>
         <ul class="navList">
           <li class="link1"><a href="#">HOME</a></li>
           <li class="link2"><a href="#intro">INTRO</a></li>
@@ -450,6 +450,7 @@
       .getElementById("menu-toggle")
       .addEventListener("click", function () {
         document.body.classList.toggle("nav-open");
+        document.querySelector(".navList").classList.toggle("display-block");
       });
 
       window.onscroll = function() {
@@ -457,8 +458,8 @@
       
       if (window.scrollY >10) {
         navBar.style.backgroundColor = '#113448'; // Change background color on scroll
-        navBar.style.position = 'fixed'; // Fix the navigation bar
-        navBar.style.top = '0%'; // Fix the navigation bar
+      navBar.style.position="fixed"
+        navBar.style.top = '0%'; 
       }else {
         navBar.style.backgroundColor = 'transparent'; // Reset background color
         navBar.style.position = 'relative'; // Reset position

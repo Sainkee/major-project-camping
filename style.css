@@ -66,13 +66,16 @@ h4 {
     margin-right: 3em ;
   }
 
-   nav li,a {
+   nav li,a,img{
     text-decoration: none !important;
     list-style: none !important;
     text-align: center;
     color: white;
     cursor: pointer;
    
+  }
+  nav li:active{
+    color: #14bf98;
   }
   .navBar :hover {
     color: #14bf98;
@@ -885,8 +888,8 @@ button[type="submit"]:hover {
   
 }
 
-.navlist-open{
-  display: block !important;
+.display-block{
+  display: block ;
 }
 
 
