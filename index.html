@@ -455,9 +455,15 @@
       window.onscroll = function() {
       var navBar = document.querySelector('.navBar');
       
-      if (window.scrollY >50) {
+      if (window.scrollY >10) {
         navBar.style.backgroundColor = '#113448'; // Change background color on scroll
         navBar.style.position = 'fixed'; // Fix the navigation bar
-      }}
+        navBar.style.top = '0%'; // Fix the navigation bar
+      }else {
+        navBar.style.backgroundColor = 'transparent'; // Reset background color
+        navBar.style.position = 'relative'; // Reset position
+       
+      }
+    }
   </script>
 </html>
