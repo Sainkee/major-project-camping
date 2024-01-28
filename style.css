@@ -66,15 +66,15 @@ h4 {
     margin-right: 3em ;
   }
 
-  ul > li {
-    text-decoration: none;
-    list-style: none;
+   nav li,a {
+    text-decoration: none !important;
+    list-style: none !important;
     text-align: center;
     color: white;
     cursor: pointer;
    
   }
-  .navBar li:hover {
+  .navBar :hover {
     color: #14bf98;
   }
   .navIcon span {
