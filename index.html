@@ -17,6 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,100&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- ---------------------hero section--------------------- -->
@@ -26,7 +33,7 @@
           src="https://www.free-css.com/assets/files/free-css-templates/preview/page259/aria/assets/images/logo.svg"
           alt="NavLogo"
         />
-        <ul class="flex gap">
+        <ul class="navList">
           <li class="link1">HOME</li>
           <li class="link2">INTRO</li>
           <li class="link3">SERVICES</li>
@@ -35,12 +42,12 @@
           <li class="link6">ABOUT</li>
           <li class="link7">CONTACT</li>
 
-          <li class="hexa">
-            <span>
-              <a href=""><i class="bi bi-facebook" style="color: white"></i></a>
-            </span>
+          <li class="navIcon">
             <span class="hexa">
               <a href=""><i class="bi bi-twitter" style="color: white"></i></a>
+            </span>
+            <span class="hexa">
+              <a href=""><i class="bi bi-facebook" style="color: white"></i></a>
             </span>
           </li>
         </ul>
@@ -75,10 +82,8 @@
             existing one can be quite an overwhelming processs at times.
           </p>
           <blockquote class="blockqoute">
-            <em
-              >"Our mission here at Aira is to get you through those tough
-              moments relying on our team's expertise in starting and growing
-              companies."</em
+            "Our mission here at Aira is to get you through those tough moments
+            relying on our team's expertise in starting and growing companies."
             >
           </blockquote>
           <p><b>Louise Donovan - CEO</b></p>
@@ -239,6 +244,42 @@
       </div>
     </div>
 
+    <!-- ---------------------call me section--------------------- -->
+    <section id="callMe">
+      <div id="callme">
+        <div class="callData">
+          <p class="mark">CONTACT</p>
+          <h2>Get In Touch Using The Form</h2>
+          <p>
+            You can stop by our office for a cup of coffee and just use the
+            contact form below for any questions and inquiries
+          </p>
+
+          <ul>
+            <li>It's very easy just fill in the form so we can call</li>
+            <li>During the call we'll require some info about the company</li>
+            <li>Don't hesitate to email us for any questions or inquiries</li>
+          </ul>
+        </div>
+
+        <form action="get">
+          <input type="text" placeholder="Name*" required />
+          <input type="tel" placeholder="Phone*" required />
+          <input type="text" placeholder="Email*" required />
+          <select name="intrested Feild" id="yourFieldId">
+            <option value="option1  " selected disabled>Intrested In...</option>
+            <option value="option1">Off The Ground</option>
+            <option value="option2">Accelarated growth</option>
+            <option value="option3">Market Domination</option>
+          </select>
+          <label for="check">
+            <input type="checkbox" id="check" /> I agree with Aria's stated
+            Privacy Policy and Terms Conditions
+          </label>
+          <button type="submit">CALL ME</button>
+        </form>
+      </div>
+    </section>
     <!-- ---------------------taem section--------------------- -->
 
     <section id="team">
@@ -249,7 +290,7 @@
           men and women which help customers meet goals and grow companies
         </p>
       </div>
-      <div class=" teamImg">
+      <div class="teamImg">
         <div>
           <img src="team-1.png" alt="" />
           <p>John Whitelong</p>
@@ -409,6 +450,8 @@
       .getElementById("menu-toggle")
       .addEventListener("click", function () {
         document.body.classList.toggle("nav-open");
+        
       });
+    
   </script>
 </html>

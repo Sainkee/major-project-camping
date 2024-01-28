@@ -2,6 +2,11 @@
   padding: 0%;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgba(255, 255, 255, 0.993);
 }
 .flex {
   display: flex;
@@ -9,7 +14,7 @@
   align-items: center;
 }
 .gap {
-  gap: 2em;
+  gap:1em;
 }
 
 h1 {
@@ -20,17 +25,15 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-h4{
+h4 {
   font-size: 1.5em;
 }
 
 /* Hero Section */
 #heroSection {
-  background: url("header-background.jpg");
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+  url("header-background.jpg") center center no-repeat;
   background-size: cover;
-  background-position: center;
-
   color: white;
   text-align: center;
   height: 100vh;
@@ -40,7 +43,27 @@ h4{
 
   nav {
     width: 100%;
-    padding: 2em 5em;
+    padding: 5% 8%;
+    position: relative;
+   
+
+    
+  }
+  .navIcon{
+    margin-top: 0;
+    display: flex;
+    gap: 1em;
+  }
+  nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap:  1.5em ;
+    
+  }
+  nav img{
+    margin-right: 3em ;
   }
 
   ul > li {
@@ -48,22 +71,20 @@ h4{
     list-style: none;
     text-align: center;
     color: white;
+    cursor: pointer;
+   
   }
-  span {
+  .navBar li:hover {
+    color: #14bf98;
+  }
+  .navIcon span {
     background: url(https://www.free-css.com/assets/files/free-css-templates/preview/page259/aria/assets/images/hexagon-green.svg)
       center center no-repeat;
     padding: 0.5em;
     text-align: center;
-
   }
   .hamBurger {
     display: none;
-  }
-
-  /* burger */
-  .hamBurger {
-    position: relative;
-    padding: 1.5rem;
   }
 
   .menu-toggle {
@@ -114,13 +135,15 @@ h4{
       }
     }
   }
+  
+
 
   .flexCol {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    height: 90%;
   }
 
   .hero p {
@@ -174,9 +197,10 @@ h4{
 }
 
 blockquote {
-  color: #787976;
+  color: #6c6868;
   font: 400 1rem/1.5625rem "Open Sans", sans-serif;
   margin: 1em 0;
+  font-style: italic;
 }
 
 #intro div img {
@@ -287,19 +311,19 @@ footer p {
 }
 /* services */
 
-#serviceSection{
+#serviceSection {
   background-color: #efe9e9;
   padding: 5em 0;
 }
-#serviceSection .data{
+#serviceSection .data {
   width: 80%;
   margin: 0 auto;
 }
 
- #serviceSection .title{
+#serviceSection .title {
   text-align: center;
 }
- #serviceSection .data{
+#serviceSection .data {
   width: 80%;
 }
 .cardContainer {
@@ -309,9 +333,7 @@ footer p {
   gap: 1em;
   margin: 2.5em 0;
   padding: 3em 0;
-  
 }
-
 
 .card1,
 .card2,
@@ -322,10 +344,8 @@ footer p {
   transition: transform 0.3s ease;
   background: white;
   position: relative;
-  box-shadow: 10px 10px 25px    black;
+  box-shadow: 10px 10px 25px black;
 }
-
-
 
 .card1 img,
 .card2 img,
@@ -339,7 +359,6 @@ footer p {
 .card2 > div:nth-child(even),
 .card3 > div:nth-child(even) {
   padding: 2em;
-  
 }
 
 #card1 h4,
@@ -362,8 +381,6 @@ footer p {
 .card2 ul,
 .card3 ul {
   list-style: square;
-  
- 
 }
 .card1 ::marker,
 .card2 ::marker,
@@ -376,7 +393,6 @@ footer p {
   color: #787976;
   font: 400 1rem/1.5625rem "Open Sans", sans-serif;
   margin: 0.5em 1em;
- 
 }
 
 .card1 h5,
@@ -405,8 +421,6 @@ footer p {
     font-size: 1rem;
     background-color: #14bf98;
     color: white;
-   
-
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.104);
@@ -418,22 +432,20 @@ footer p {
   }
 }
 
-.fullImg{
+.fullImg {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center; 
-   align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
-.fullImg img{
+.fullImg img {
   width: 100%;
   height: auto;
 }
 .fullImgData {
-  margin: 3em ;
-  
+  margin: 3em;
 }
-.fullImgData img{
+.fullImgData img {
   width: 50%;
   height: 100%;
 }
@@ -473,15 +485,14 @@ footer p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-
-} .fullImgData ul{
+}
+.fullImgData ul {
   padding-left: 1.5em;
 }
 .fullImgData ul::marker {
   border-radius: 50%;
   border: 1px solid black;
 }
-
 
 .fullImgData ul li {
   font-size: 1.5rem;
@@ -504,17 +515,16 @@ footer p {
   margin-right: 0.5em;
   border: 1px solid black;
 }
-.fullImgData ul li:hover{
+.fullImgData ul li:hover {
   color: #14bf98;
 }
 .fullImgData ul li:hover::before {
   color: #14bf98;
-  border:2px solid #14bf98;
+  border: 2px solid #14bf98;
 }
 .fullImgData ul li:hover::before:active {
   background-color: #14bf98;
   color: black;
-  
 }
 .range {
   position: relative;
@@ -522,41 +532,173 @@ footer p {
   background-color: #14bf98;
   width: 100%;
 }
-.range2{
+.range2 {
   width: 50%;
   position: relative;
   height: 2em;
   background-color: #14bf98;
 }
-.range3{
+.range3 {
   width: 80%;
   position: relative;
   height: 2em;
   background-color: #14bf98;
 }
-.padd{
-  padding: 0 2em
+.padd {
+  padding: 0 2em;
 }
 
+/* call Section */
+#callMe {
+  background-color: #113448;
+}
+#callme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5em 0;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 2em;
+  color: white;
+  align-items: center;
+}
 
+.callData {
+  padding: 1em 0;
+}
+
+.callData p:not(:first-child) {
+  padding: 0.5em 0;
+  color: #b0a6a6;
+}
+
+.callData h2 {
+  padding: 1em 0;
+}
+.callData ul {
+  margin-left: 1em;
+  list-style: square;
+}
+.callData li::marker {
+  color: #14bf98;
+}
+
+.contact {
+  display: flex;
+  gap: 1em;
+
+  a {
+    color: #14bf98;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  span:nth-child(odd) {
+    font-size: 1.5rem;
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 1em;
+  justify-content: center;
+}
+
+form * {
+  margin: 0.5em 0;
+  padding: 1em 0;
+}
+
+.formData h4 {
+  font-size: 1.5rem;
+  margin: 1.6em 0;
+  font-weight: 600;
+}
+
+#callme input:not(#check) {
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  background-color: #0e4869;
+  &:hover {
+    border: 1px solid white;
+  }
+  &::placeholder {
+    color: white;
+    padding: 1em;
+  }
+}
+#callme select {
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  background-color: #0e4869;
+  color: white;
+  &:hover {
+    border: 1px solid white;
+  }
+}
+
+.iconLink {
+  margin-top: 1.5em;
+}
+
+.iconLink .hexa {
+  background: url("https://www.free-css.com/assets/files/free-css-templates/preview/page259/aria/assets/images/hexagon-green.svg")
+  center/cover no-repeat;
+  background-size: contain;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.iconLink .hexa a {
+  font-size: 1em;
+  margin: 0 0.5em;
+}
+
+button[type="submit"] {
+  margin: 1.5em auto;
+  padding: 1em 3em;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #14bf98;
+  color: white;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.104);
+  color: #14bf98;
+  border: 2px solid #14bf98;
+  padding: calc(1em - 1px) 3em;
+  box-sizing: border-box;
+}
 
 /* team Section */
 #team {
-padding: 5em auto;
+  margin: 6em auto;
 }
-#team .title{
+#team .title {
   text-align: center;
   width: 60%;
   margin: 2em auto;
 }
-.teamImg{
+.teamImg {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3em;
   padding: 3em;
-  
 }
 
 /* Form Section */
@@ -658,35 +800,9 @@ button[type="submit"]:hover {
   box-sizing: border-box;
 }
 
-.hamBurgur {
-  display: none;
-}
-.toggleActive {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
 
 
 /*/////////////////////// Media Queries//////////////////////////////////////////// */
-
-@media only screen and (max-width: 768px) {
-  .hamBurgur {
-    display: block;
-    position: absolute;
-    right: 0;
-  }
-  .navList {
-    display: none;
-    position: absolute;
-    top: 6em;
-    left: 0;
-  }
-  .intro1 {
-    grid-template-columns: 1fr;
-  }
- 
-}
 
 @media only screen and (max-width: 990px) {
   .footer-col {
@@ -709,19 +825,70 @@ button[type="submit"]:hover {
   nav .hexa {
     display: none;
   }
+  
+
   .introIcon {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1.5em;
   }
-  .cardContainer,.fullImg,.aboutContainer{
+  .cardContainer,
+  .fullImg,
+  .aboutContainer {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
   }
-}
+  .teamImg {
+    flex-direction: column;
+  }
+  #callme {
+    grid-template-columns: 1fr;
+  }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+  .navBar,
+  .navBar ul {
+    align-items: flex-end !important;
+    
+  }
   
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  .hamBurger {
+    display: block !important;
+    position: absolute;
+    top:50%;right:10%;
+  }
+  .navBar ul{
+    display: none !important ;
+  }
+
+  
+  .navBar,
+  .navBar ul {
+    flex-direction: column;
+    align-items: start !important;
+    background-color: #0e4869;
+    gap: 2em;
+    width: 100%;
+    
+  }
+ 
+  .intro1 {
+    grid-template-columns: 1fr;
+  }
+  
+  
+}
+
+.navlist-open{
+  display: block !important;
+}
+
+
+
+
