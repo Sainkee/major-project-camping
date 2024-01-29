@@ -838,7 +838,7 @@ button[type="submit"]:hover {
   }
   .cardContainer,
   .fullImg,
-  .aboutContainer,#aboutgot{
+  .aboutContainer,#about{
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
